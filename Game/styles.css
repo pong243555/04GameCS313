@@ -1,0 +1,77 @@
+#music-controls img {
+	height: 75px;
+}
+
+#topRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+#player img {
+	height: 100px;
+
+	border: 5px solid;
+	border-color: black;
+}
+
+#enemy img{
+	height: 100px;
+	transform: scaleX(-1);
+
+	border: 5px solid;
+	border-color: black;
+}
+
+.chars {
+	margin: 150px 100px;
+}
+
+#bottomRow {
+	padding: 20px;
+	font: 20pt Arial;
+	text-align: center;
+}
+
+.stats {
+	width: 350px;
+	height: 400px;
+	visibility: hidden;
+	
+}
+
+.healthLabel {
+	font: 18pt Arial;
+	font-weight: bold;
+}
+
+.buttonStyle {
+	background-color: white;
+	border: 5px solid;
+	border-color: black;
+	font: 24pt Arial;
+	border-radius: 20px;
+	padding: 10px 35px;
+	font-weight: bold;
+
+}
+
+.buttonStyle:hover {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+.hpBorder {
+	width: 300px;
+	height: 30px;
+	border: 3px solid;
+	border-color: black;
+}
+
+.hpBar {
+	width: 300px;
+	height: 30px;
+	background-color: green;
+}

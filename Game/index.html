@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game Assignment #3</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div id="music-controls">
+		<img src="assets/img/sndon.png"
+		onclick="mute();">
+	</div>
+	<audio id="myAudio" loop>
+		<source src="assets/Dark Souls - Bell Gargoyle.mp3" type="audio/x-m4a">
+		Yadda yadda.
+	</audio>
+	<audio id="myAudio2" loop>
+		<source src="assets/You Died.mp3" type="audio/x-m4a">
+		Yadda yadda.
+	</audio>
+	<audio id="myAudio3">
+		<source src="assets/mixkit-sword-slides-a-body-2791.wav" type="audio/wav">
+		Yadda yadda.
+	</audio>
+	<audio id="myAudio4">
+		<source src="assets/Backstab 1.mp3" type="audio/wav">
+		Yadda yadda.
+	</audio>
+
+	<div id="container">
+		<div id="topRow">
+			<div id="playerStats" class="stats">
+				<span class="healthLabel">HEALTH</span><br>
+				<div class="hpBorder">
+					<div id="playerHP" class="hpBar"></div>
+				</div>
+				<p id="playerMoves">
+					<span class="healthLabel">MOVES</span><br>
+					<button onclick="attack(); snd.play(); snd.currentTime = 0" class="buttonStyle">ATTACK</button>
+					<button onclick="specialAttack(); cri.play(); cri.currentTime = 0" class="buttonStyle">SPECIAL</button>
+				</p>
+			</div>
+			<div id="player" class="chars">
+				<img src="assets/img/Screenshot 2022-01-03 191722.png">
+			</div>
+			<div id="enemy" class="chars">
+				<img src="assets/img/shrek-meme-idlememe-1.jpg">
+			</div>
+			<div id="enemyStats" class="stats">
+				<span class="healthLabel">HEALTH</span><br>
+				<div class="hpBorder">
+					<div id="enemyHP" class="hpBar"></div>
+				</div>
+			</div>
+		</div>
+		<div id="bottomRow">
+			<h1>Doggo on the Mission to help Princess Fiona</h1>
+			<p>There can be only one to survive</p>
+			<button onclick="beginBattle()" class="buttonStyle">START!</button>
+		</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>	
+</body>
+</html>
